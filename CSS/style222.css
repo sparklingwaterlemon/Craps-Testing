@@ -1,0 +1,23 @@
+#table-area {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 1px;
+    height: 400px;
+    width: 300px;
+    background-color: gray;
+}
+
+#chip-rack {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+
+#chip-testing-1{
+    margin: 4px;
+    height: 30px;
+    width: 40px;
+    background-color: dodgerblue;
+}
+
