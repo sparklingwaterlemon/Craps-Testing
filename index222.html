@@ -10,17 +10,8 @@
 
 
 <body>
-  <div id="table-area">
-    <div
-      ondrop="drop(event)"
-      ondragover="allowDrop(event)">
-    </div>
-  </div>
-
-
-  <div id="chip-rack" 
-    ondrop="drop(event)" 
-    ondragover="allowDrop(event)">
+  <!-- <div id="rack" ondrop="drop(event)" ondragover="allowDrop(event)"> -->
+  <div id="rack" ondragover="allowDrop(event)" ondrop="remove(event)">
     <div 
       id="chip-testing-1"
       value="1"
@@ -30,7 +21,11 @@
     </div>
   </div>
 
-
+    <div
+      id="board"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)">
+    </div>
 
 
   <script defer src="JS/script222.js"></script>
