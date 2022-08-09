@@ -17,11 +17,7 @@ function drop(event) {
 
 
     var data = event.dataTransfer.getData("text");
-    // event.target.appendChild(document.getElementById(data));
     event.target.appendChild(document.getElementById(data).cloneNode(true));
-    console.log(data);
-    console.log(event.target);
-
 }
 
 
@@ -32,10 +28,6 @@ function remove(event, value) {
     
 
     var data = event.dataTransfer.getData("text");
-    console.log(data);
-    
-    var betChip = document.getElementById("data");
-    console.log(betChip);
-    board.removeChild(betChip);
-    
+    event.target.appendChild(document.getElementById(data));
+      
 }
