@@ -28,6 +28,6 @@ function remove(event, value) {
     
 
     var data = event.dataTransfer.getData("text");
-    event.target.appendChild(document.getElementById(data));
+    event.target.removeChild(document.getElementById(data));
       
 }
