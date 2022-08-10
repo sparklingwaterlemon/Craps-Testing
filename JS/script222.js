@@ -14,8 +14,6 @@ function drop(event) {
     console.log(typeof chipValue);
     console.log(chipValue);
 
-    
-
     var data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data).cloneNode(true));    
 }
