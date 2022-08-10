@@ -1,5 +1,4 @@
 function drag(event, value) {
-    console.log("dragging...");
     event.dataTransfer.setData("number", value);
     event.dataTransfer.setData("text", event.target.id);
 }
@@ -15,19 +14,15 @@ function drop(event) {
     console.log(typeof chipValue);
     console.log(chipValue);
 
-
-    var data = event.dataTransfer.getData("text");
-    event.target.appendChild(document.getElementById(data).cloneNode(true));
-}
-
-
-function remove(event, value) {
-    event.preventDefault();
-
-    var chipValue = Number(event.dataTransfer.getData("number"));
     
 
     var data = event.dataTransfer.getData("text");
-    event.target.removeChild(document.getElementById(data));
-      
+    event.target.appendChild(document.getElementById(data).cloneNode(true));    
+}
+
+
+function clearboard(){
+    console.log("clear");
+    var board = document.getElementById("board");
+    board.replaceChildren()
 }

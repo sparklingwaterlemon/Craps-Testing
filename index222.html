@@ -10,14 +10,16 @@
 
 
 <body>
-  <!-- <div id="rack" ondrop="drop(event)" ondragover="allowDrop(event)"> -->
-  <div id="rack" ondragover="allowDrop(event)" ondrop="remove(event)">
+  <button value="RESET" onclick="clearboard()">RESET </button>
+
+
+  <div id="rack">
     <div 
       id="chip-testing-1"
       value="1"
       draggable="true"
       ondragstart="drag(event, 1)">
-      $1
+      <div id="chip1text">$1</div>
     </div>
   </div>
 

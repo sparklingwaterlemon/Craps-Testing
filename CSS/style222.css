@@ -15,9 +15,16 @@
 }
 
 #chip-testing-1{
-    margin: 4px;
+    text-align: center;
+    vertical-align: center;
+    
+    margin: 2px;
     height: 30px;
-    width: 40px;
+    width: 30px;
+    padding: 1px;
+    border-radius: 50%;
     background-color: dodgerblue;
 }
-
+#chip1text {
+    margin: 5px;
+}
